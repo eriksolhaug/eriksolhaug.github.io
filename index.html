@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
+	
 	<body class="is-preload">
 	<style>
 		body {
@@ -20,6 +20,77 @@
 			font-size: 20px;
 		}
 		</style>
+
+		<!-- Adding responsive header -->
+		
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+			* {box-sizing: border-box;}
+			
+			/* body { 
+			  margin: 0;
+			  font-family: Arial, Helvetica, sans-serif;
+			} */
+			
+			.header {
+			  overflow: hidden;
+			  background-color: #f1f1f1;
+			  padding: 20px 10px;
+			}
+			
+			.header a {
+			  float: left;
+			  color: black;
+			  text-align: center;
+			  padding: 12px;
+			  text-decoration: none;
+			  font-size: 18px; 
+			  line-height: 25px;
+			  border-radius: 4px;
+			}
+			
+			.header a.logo {
+			  font-size: 25px;
+			  font-weight: bold;
+			}
+			
+			.header a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			
+			.header a.active {
+			  background-color: dodgerblue;
+			  color: white;
+			}
+			
+			.header-right {
+			  float: right;
+			}
+			
+			@media screen and (max-width: 500px) {
+			  .header a {
+				float: none;
+				display: block;
+				text-align: left;
+			  }
+			  
+			  .header-right {
+				float: none;
+			  }
+			}
+			</style>
+			</head>
+			<body>
+			
+			<div class="header">
+			  <a href="#default" class="logo">Erik Solhaug</a>
+			  <div class="header-right">
+				<a class="active" href="#home">Home</a>
+				<a href="#research">Research</a>
+				<a href="#aboutme">About Me</a>
+			  </div>
+			</div>
 
 		<!-- Header -->
 			<header id="header">
@@ -34,13 +105,13 @@
 		<!-- Main -->
 			<div id="main">
 
-				<!-- One -->
-					<section id="one">
+				<!-- Home -->
+					<section id="home">
 						<header class="major">
-							<h1><span style="color: #2e86c1">Hello!</span></h1>
+							<h1><span style="color:  #154360">Hello!</span></h1>
 						</header> 
 						<!-- Researching the universe has been a lifelong goal of mine, and I couldn't be more fortunate to be where I am now.  -->
-						<span style="color: #2e86c1">
+						<span style="color:  #154360">
 						<p>
 							My research focuses on the gaseous contents of galaxies and their evolution. I utilize emission and absorption spectra of galaxies to quantify the dynamic properties of galaxies through the use of both observed and simulated data. I received my Bachelor of Science with a double-major in Physics: Comprehensive Physics and Astronomy from the University of Washington in Seattle in the spring of 2022. At the UW, I analyzed absorption spectra from the COS spectrograph on the Hubble Space Telescope and used numerical photoionization code to predict the emitted spectra from some of the most diffuse gas in the universe. I am currently a graduate student at the University of Chicago's <a href="https://astrophysics.uchicago.edu/people/profile/erik-solhaug/">Department of Astronomy & Astrophysics</a>.
 						</p>
@@ -48,17 +119,18 @@
 						<p>
 							Check out my <a href="documents/CV_Resume_2_2_2023_Solhaug_Erik.pdf"><b>CV here!</b></a> <em>(Last updated: February 2nd, 2023)</em>
 						</p>
-						</span>							
-						<li><a href = "documents/CV_Resume_2_2_2023_Solhaug_Erik.pdf" target = "_blank" download='CV_SolhaugErik' class="button">CV</a></li>
+						</span>		
+						
+						<!-- Buttons -->
+						<ul class="actions">				
+							<li><a href = "documents/CV_Resume_2_2_2023_Solhaug_Erik.pdf" target = "_blank" download='CV_SolhaugErik' class="button">CV</a></li>
+						</ul>
 						<ul class="actions">
 							<li><a href="#research" class="button">Research</a></li>
 						</ul>
 						<ul class="actions">
 							<li><a href="#aboutme" class="button">About Me</a></li>
 						</ul>
-						<!-- <ul class="actions">
-							<li><a href="#" class="button">Image credits</a></li>
-						</ul> -->
 					</section>
 				
 				<!-- Research -->
@@ -206,7 +278,7 @@
 						<p>This webpage is a work in progress. Please see image credits for certain photos on this page (specifically the ones in the "More" tab headers): <br />
 							Circumgalactic medium diagram (Tumlinson et al.) https://ned.ipac.caltech.edu/level5/March18/Tumlinson/Tumlinson1.html <br \>
 							James Webb Space Telescope (Chris Gunn/NASA)</p>
-						<!-- <div class="row">
+						<div class="row">
 							<div class="col-8 col-12-small">
 								<form method="post" action="#">
 									<div class="row gtr-uniform gtr-50">
@@ -218,7 +290,7 @@
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
-							</div> -->
+							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
