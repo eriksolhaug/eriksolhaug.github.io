@@ -111,7 +111,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: none; /* used to be dotted 1px */
 		color: #2471a3;
 		text-decoration: none;
 	}
@@ -276,7 +276,7 @@ input, select, textarea {
 		color: black;
 	}
 	.top_header a:link {
-		text-decoration: none !important;
+		text-decoration: none;
 	}
 
 	.top_header a.active {
