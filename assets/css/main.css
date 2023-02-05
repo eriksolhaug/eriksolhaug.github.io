@@ -28,7 +28,10 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
-	padding-top: 40px;
+}
+
+section {
+	padding-top: 40px; /* makes the dynamic header give room for the text in the sections*/
 }
 
 body {
