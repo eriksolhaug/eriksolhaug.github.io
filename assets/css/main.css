@@ -252,7 +252,7 @@ input, select, textarea {
 	.top_header {
 		overflow: hidden;
 		background-color: #f7f9f9;
-		padding: 20px 10px;
+		padding: 0px 0px; /* Used to be 20px 10px */
 	}
 
 	.top_header a {
@@ -300,7 +300,7 @@ input, select, textarea {
 	}
 
 	.sticky + .content {
-	padding-top: 102px;
+	padding-top: 80px; /* Used to be 102px */
 	}
 
 	@media screen and (max-width: 500px) {
