@@ -79,12 +79,12 @@ def lam_u(cl, n):
 
 value = lam_u(cl, n)
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>"
-print "<title>Hello - Second CGI Program</title>"
-print "</head>"
-print "<body>"
-print "<h3>Upper Limit: %s </h3>" % (value)
-print "</body>"
-print "</html>"
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Upper Limit Result</title>")
+print("</head>")
+print("<body>")
+print("<h3>Upper Limit: %s </h3>" % (value))
+print("</body>")
+print("</html>")

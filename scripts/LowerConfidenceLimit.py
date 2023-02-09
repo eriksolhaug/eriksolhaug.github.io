@@ -80,12 +80,12 @@ def lam_l(cl, n):
 
 value = lam_l(cl, n)
 
-print "Content-type:text/html\r\n\r\n"
-print "<html>"
-print "<head>"
-print "<title>Hello - Second CGI Program</title>"
-print "</head>"
-print "<body>"
-print "<h3>Lower Limit: %s </h3>" % (value)
-print "</body>"
-print "</html>"
+print("Content-type:text/html\r\n\r\n")
+print("<html>")
+print("<head>")
+print("<title>Lower Limit - Result</title>")
+print("</head>")
+print("<body>")
+print("<h3>Lower Limit: %s </h3>" % (value))
+print("</body>")
+print("</html>")
