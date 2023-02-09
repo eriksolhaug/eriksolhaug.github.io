@@ -73,11 +73,16 @@
 						<header class="major">
 							<h3>Upper limit</h3>
 						</header>
-							<form action="/scripts/confidence_limits.py" method="get">
+							<!-- <form action="/scripts/confidence_limits.py" method="get">
 								<label for="n_input">n:</label><br>
 								<input type="text" id="n_input" name="n_input" value="50"><br>
 								<label for="CL_input">CL:</label><br>
 								<input type="text" id="CL_input" name="CL_input" value="0.8413"><br><br>
+								<input type="submit" value="Submit">
+							</form>  -->
+							<form name="confidence_limits" action="/scripts/confidence_limits.py" method="get">
+								n: <input type="text" name="n_input"> </br>
+								CL: <input type="text" name="CL_input"> </br>
 								<input type="submit" value="Submit">
 							</form> 
 						</body>
