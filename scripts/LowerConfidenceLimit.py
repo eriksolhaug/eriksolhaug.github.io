@@ -1,6 +1,6 @@
 # LowerConfidenceLimit.py
 # Find the LOWER confidence limit of a Poisson Distribution given number of events, n, and single-sided confidence limit, CL.
-import cgi
+import cgi, cgitb
 form = cgi.FieldStorage()
 n =  form.getvalue('n_input')
 cl =  form.getvalue('CL_input')
