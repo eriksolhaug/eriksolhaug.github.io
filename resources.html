@@ -6,10 +6,16 @@
 -->
 <html>
 	<head>
-		<title>Erik Solhaug's Personal Website</title>
+		<title>Erik Solhaug - Resources</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		</script>
+		<script type="text/javascript"
+		src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+		</script>
 	</head>
 
 	<body class="is-preload">	
@@ -24,12 +30,12 @@
 	<div class="top_header" id="top_header">
 		<!-- <a href="#home" class="logo">Erik Solhaug</a> -->
 		<div class="header-right">
-			<a href="#">Home</a>
+			<a href="index.html">Home</a>
 			<a href="documents/CV_Resume_2_2_2023_Solhaug_Erik.pdf" target = "_blank" download='CV_SolhaugErik'>CV</a>
-			<a href="#research">Research</a>
-			<a href="#aboutme">About Me</a>
-			<a href="#running">Running</a>
-			<a href="#resources">Resources</a>
+			<a href="index.html/research">Research</a>
+			<a href="index.html/aboutme">About Me</a>
+			<a href="index.html/running">Running</a>
+			<a href="#">Resources</a>
 		</div>
 	</div>
 
@@ -48,82 +54,38 @@
 		<!-- Main -->
 			<div id="main">
 
-				<!-- Home -->
+				<!-- Resources -->
 					<section id="home">
 						<header class="major">
-							<h1>Hello!</h1>
+							<h1>Resources</h1>
 						</header>
 						<body>
-						<p>
-							<!-- Researching the universe has been a lifelong goal of mine, and I couldn't be more fortunate to be where I am now.  -->
-							My research focuses on the gaseous contents of galaxies and their evolution. I utilize emission and absorption spectra of galaxies to quantify the dynamic properties of galaxies through the use of both observed and simulated data. I received my Bachelor of Science with a double-major in Physics: Comprehensive Physics and Astronomy from the University of Washington in Seattle in the spring of 2022. Currently, I'm a graduate student at the University of Chicago's <a href="https://astrophysics.uchicago.edu/people/profile/erik-solhaug/" target = "_blank">Department of Astronomy & Astrophysics</a>.
-							<!-- At the UW, I analyzed absorption spectra from the COS spectrograph on the Hubble Space Telescope and used numerical photoionization code to predict the emitted spectra from some of the most diffuse gas in the universe.  -->
-						</p>
-						</br>
-						<p>
-							Check out my <b>CV here:</b>
-						</p>
-						</body>
-						
-						<!-- Buttons -->
-						<ul class="actions">
-							<li><a href = "documents/CV_Resume_2_2_2023_Solhaug_Erik.pdf" target = "_blank" download='CV_SolhaugErik' class="button">CV</a></li>
-						</ul>
-						<body>
 							<p>
-								<em>(Last updated: February 2nd, 2023)</em>
+								Here you can find a few tools and resources that may be useful.
+							</p>
+						</br>
+						<header class="major">
+							<h2>Confidence Limit Calculation - Poisson Distribution</h2>
+						</header>
+							<p>
+								Calculate the lower and upper <b>single-sided</b> confidence limits of a <b>Poisson</b> distribution. Insert given number of events $n$ and the given confidence limit $CL$. Note: accepted values for $CL$ are $0.8413, 0.900, 0.950, 0.975, 0.9772, 0.990, 0.995, 0.9987, 0.999, 0.9995$.
+							</p>
+						<header class="major">
+							<h3>Upper limit</h3>
+						</header>
+							<form>
+								<label for="fname">n:</label><br>
+								<input type="text" id="fname" name="fname" value="50"><br>
+								<label for="lname">CL:</label><br>
+								<input type="text" id="lname" name="lname" value="0.8413">
+							</form>
+						</body>
+							<p>
+								<em>Calculation is adapted from Gehrels, 1986 () 198 6ApJ. . .303. .336G.</em>
 							</p>
 						</body>
 					</section>
 				
-				<!-- Research -->
-				<section id="research">
-					<header class="major">
-						<h2>My Research</h2>
-					</header>
-					<body>
-						<p>
-							Here I'll put some info on what's kept me busy lately... CGM, Lyman Alpha emission profiles - all the good stuff
-						</p>
-					</body>
-				</section>
-
-				<!-- About Me --> 
-				<section id="aboutme">
-					<header class="major">
-						<h2>A little bit about me</h2>
-					</header>
-					<body>
-						<p>
-							I spent the first 17 years of my life growing up in Oslo, Norway before I moved to Boise, Idaho. I love the outdoors, and some of my interests include running, nordic skiing, golfing, and hiking.
-						</p>
-					</body>
-				</section>
-
-				<!-- Running -->
-				<section id="running">
-					<header class="major">
-						<h2>Running</h2>
-					</header>
-					<body>
-						<!-- <p>
-							Running is my favorite way to connect with the outdoors. Not only is it a great way to break away from everyday hassles, but it also gives me a ton of surplus energy to fuel me to perform my best throughout the week in my work.
-						</p> -->
-						<h3>
-							My most recent races:
-						</h3>
-						<p>
-							<a href="https://www.trisignup.com/Race/Results/65022/?resultSetId=315486#resultSetId-315486;perpage:100" target="_blank">Kirkland Mother's Day Half-Marathon</a> (2nd place, 1:27:22.44)
-						</p>
-						<h3>
-							My most recent runs:
-						</h3>
-						<!-- iFrame -->
-						<iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/28704009/latest-rides/47ca984f038d5e5cc9b1c71f425326192ea4264e'></iframe>
-						<p>
-							(Feel free to follow me on Strava!) </br> </br> </br>
-						</p>
-					</body>
 
 					<!-- Feel free to reach out to me by <a href ="mailto: eriksolhaug@uchicago.edu">email</a> with any questions you may have. -->
 
