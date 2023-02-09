@@ -80,11 +80,20 @@
 								<input type="text" id="CL_input" name="CL_input" value="0.8413"><br><br>
 								<input type="submit" value="Submit">
 							</form>  -->
-							<form name="confidence_limits" action="/scripts/confidence_limits.py" method="get">
+							<form name="upper_limit" action="/scripts/UpperConfidenceLimit.py" method="get">
 								n: <input type="text" name="n_input"> </br>
 								CL: <input type="text" name="CL_input"> </br>
 								<input type="submit" value="Submit">
 							</form> 
+						
+							<header class="major">
+								<h3>Lower limit</h3>
+							</header>
+								<form name="lower_limit" action="/scripts/LowerConfidenceLimit.py" method="get">
+									n: <input type="text" name="n_input"> </br>
+									CL: <input type="text" name="CL_input"> </br>
+									<input type="submit" value="Submit">
+								</form> 
 						</body>
 							<p>
 								<em>Calculation is adapted from Gehrels, 1986 () 198 6ApJ. . .303. .336G.</em>
