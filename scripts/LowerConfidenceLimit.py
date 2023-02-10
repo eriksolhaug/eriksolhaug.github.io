@@ -1,5 +1,6 @@
 # LowerConfidenceLimit.py
 # Find the LOWER confidence limit of a Poisson Distribution given number of events, n, and single-sided confidence limit, CL.
+
 import cgi, cgitb
 form = cgi.FieldStorage()
 n =  form.getvalue('n_input')
@@ -72,20 +73,16 @@ def gamma(cl):
     elif cl == 0.9995:
         return -1.80
 
-def lam_l(cl, n):
-#     return (n - S(cl)*np.sqrt(n - 1/4) + (S(cl)**2 - 1)/4) # Eqn 11
-#     return n*(1 - 1/(9*n) - S(cl)/(3*np.sqrt(n)))**3 # Eqn 12
-#     return (n - S(cl)*np.sqrt(n) + (S(cl)**2 - 1)/3) # Eqn 13
-    return n*(1 - 1/(9*n) - S(cl)/(3*np.sqrt(n)) + beta(cl)*(n**gamma(cl)))**3 # Eqn 14
+def lam_u(cl, n):
+#     return (n + S(cl)*np.sqrt(n + 3/4) + (S(cl)**2 + 3)/4) # Eqn 7
+    return ((n+1) * (1 - 1/(9*(n+1)) + S(cl)/(3*np.sqrt(n+1)))**3) # Eqn 9
+#     return (n + S(cl)*np.sqrt(n + 1) + (S(cl)**2 + 2)/3) # Eqn 10
 
-value = lam_l(cl, n)
+from flask import Flask
 
-print("Content-type:text/html\r\n\r\n")
-print("<html>")
-print("<head>")
-print("<title>Lower Limit - Result</title>")
-print("</head>")
-print("<body>")
-print("<h3>Lower Limit: %s </h3>" % (value))
-print("</body>")
-print("</html>")
+app = Flask(__name__)
+
+@app.route('/?n_input=<float:n_input>&CL_input=<float:CL_input>')
+def run_lowerlimit(n_input, CL_input):
+    value = lam_l(CL_input, n_input)
+    return "<h2>The lower limit is %s <h2>" % value
