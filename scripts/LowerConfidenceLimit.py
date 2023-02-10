@@ -82,7 +82,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/?n_input=<float:n_input>&CL_input=<float:CL_input>')
+@app.route('/resources.html?n_input_lower=<float:n_input>&CL_input_lower=<float:CL_input>')
 def run_lowerlimit(n_input, CL_input):
     value = lam_l(CL_input, n_input)
     return "<h2>The lower limit is %s <h2>" % value
