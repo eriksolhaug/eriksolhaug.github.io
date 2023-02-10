@@ -81,7 +81,7 @@
 								<input type="text" id="CL_input" name="CL_input" value="0.8413"><br><br>
 								<input type="submit" value="Submit">
 							</form>  -->
-							<form name="upper_limit" action="/scripts/UpperConfidenceLimit.py" method = "get">
+							<form name="upper_limit" method = "get">
 								n: <input type="text" name="n_input" value=50> </br>
 								CL: <input type="text" name="CL_input" value=0.8413> </br>
 								<input type="submit" value="Submit">
@@ -90,7 +90,8 @@
 							<header class="major">
 								<h4>Lower limit</h4>
 							</header>
-								<form name="lower_limit" action="/scripts/LowerConfidenceLimit.py" method="get">
+							<!-- action="/scripts/LowerConfidenceLimit.py" -->
+								<form name="lower_limit" method="get">
 									n: <input type="text" name="n_input" value=50> </br>
 									CL: <input type="text" name="CL_input" value=0.8413> </br>
 									<input type="submit" value="Submit">
