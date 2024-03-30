@@ -2709,6 +2709,11 @@ input, select, textarea {
 		}
 
 		#header > .inner img {
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
+			flex-grow: 1;
+			margin: 0 0 2em 0;
 			width: 150px; /* Adjust the width as needed */
 			height: auto; /* This ensures the image retains its aspect ratio */
 		}
