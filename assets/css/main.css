@@ -2708,15 +2708,15 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-		#header > .inner img {
+		/* #header > .inner img {
 			-moz-flex-grow: 1;
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
 			margin: 0 0 2em 0;
 			width: 150px; /* Adjust the width as needed */
-			height: auto; /* This ensures the image retains its aspect ratio */
-		}
+			/* height: auto; /* This ensures the image retains its aspect ratio */
+		/*}*/
 
 		#header strong, #header b {
 			color: #ffffff;
