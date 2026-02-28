@@ -93,6 +93,32 @@ section p {
 .pub-list strong {
     font-weight: 600;
 }
+
+/* Presentations */
+.pres-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.pres-list li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+    color: #555;
+    line-height: 1.7;
+}
+
+.pres-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+.pres-list strong {
+    font-weight: 600;
+}
+
 /* Links */
 a {
     color: #007bff;
